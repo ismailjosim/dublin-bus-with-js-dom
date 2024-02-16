@@ -34,6 +34,7 @@
                         couponOne: '#ffbf0f',
                         couponTwo: '#f78c9c',
                         mobileMenu: '#f7f8f8',
+                        body: '#03071299',
                     },
                     fontFamily: {
                         RaleWay: 'Raleway',
@@ -50,7 +51,7 @@
 
 <body class="font-RaleWay">
     <!-- Header Section content -->
-    <header class="w-11/12 mx-auto mb-10">
+    <header class="w-11/12 mx-auto">
         <!-- Navigation Menu Content -->
         <nav class="flex justify-between items-center py-2 relative">
             <div>
@@ -91,7 +92,7 @@
                 </button>
             </div>
             <ul id="mobileMenu"
-                class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-md bg-slate-200 text-center w-full mx-auto">
+                class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-2xl bg-slate-200 text-center w-full mx-auto">
                 <li class="hover:bg-primary py-2 rounded text-primary hover:text-secondary w-full">
                     <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Home</a>
                 </li>
@@ -112,11 +113,11 @@
         <!-- Home Banner content -->
         <section id="banner-section" class="my-5">
             <div
-                class="bg-[url(./assets/slide01.jpg)] overflow-hidden h-[75vh] bg-center bg-no-repeat bg-cover rounded-lg relative">
+                class="bg-[url(./assets/slide01.jpg)] overflow-hidden h-[75vh] bg-center bg-no-repeat bg-cover rounded-2xl relative -z-10">
                 <div class="absolute top-0 left-0 w-full h-full bg-black/45"></div>
                 <!-- slider content -->
                 <div class="w-full h-full flex flex-col justify-center items-center">
-                    <div class="absolute z-30 text-white text-center">
+                    <div class="absolute text-white text-center">
                         <h2 class="text-6xl font-extrabold flex flex-col">
                             <span class="">End-to-End Travel with</span>
                             <span class="text-primary">Dublin bus</span>
@@ -144,9 +145,49 @@
                 </div>
             </div>
         </section>
-        <!-- Script JS file link -->
-        <script src="./JS/app.js"></script>
     </header>
+
+    <main class="mb-10">
+        <!-- statistics section start -->
+        <section id="statistics" class="grid grid-cols-3 gap-5 w-9/12 mx-auto -mt-20 z-50">
+
+            <!-- Card One -->
+            <div class="flex items-center gap-6 border-b-2 border-primary px-10 py-8 rounded-3xl shadow-lg bg-white">
+                <div>
+                    <i class="fa-solid fa-users text-primary text-5xl"></i>
+                </div>
+                <div class="font-Inter">
+                    <h4 class="text-4xl font-bold">500K+</h4>
+                    <p class="text-body">Register users</p>
+                </div>
+            </div>
+
+            <!-- Card Two -->
+            <div class="flex items-center gap-6 border-b-2 border-primary px-10 py-8 rounded-3xl shadow-lg bg-white">
+                <div>
+                    <i class="fa-solid fa-ticket text-primary text-5xl"></i>
+                </div>
+                <div class="font-Inter">
+                    <h4 class="text-4xl font-bold">1.7 lacks</h4>
+                    <p class="text-body">Tickets Sold</p>
+                </div>
+            </div>
+            <!-- Card Three -->
+            <div class="flex items-center gap-6 border-b-2 border-primary px-10 py-8 rounded-3xl shadow-lg bg-white">
+                <div>
+                    <i class="fa-solid fa-handshake text-primary text-5xl"></i>
+                </div>
+                <div class="font-Inter">
+                    <h4 class="text-4xl font-bold">80K+</h4>
+                    <p class="text-body">Rental partners</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Script JS file link -->
+    <script src="./JS/app.js"></script>
 </body>
 
 </html>
