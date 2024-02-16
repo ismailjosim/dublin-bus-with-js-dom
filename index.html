@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <title>Dublin Bus - Online Bus Ticket Booking With DOM Manipulation</title>
-    <!-- Link: Google Font -->
+
+    <!-- Font: Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Railway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
+
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- Link: Fontawesome CDN -->
     <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
 
@@ -30,6 +37,7 @@
                     },
                     fontFamily: {
                         RaleWay: 'Raleway',
+                        Inter: 'Inter',
                     },
                 },
             },
@@ -43,6 +51,7 @@
 <body class="font-RaleWay">
     <!-- Header Section content -->
     <header class="w-11/12 mx-auto mb-10">
+        <!-- Navigation Menu Content -->
         <nav class="flex justify-between items-center py-2 relative">
             <div>
                 <img width="150" src="./assets/logo.jpg" alt="" />
@@ -100,7 +109,41 @@
                 </li>
             </ul>
         </nav>
-        <section id="banner-section"></section>
+        <!-- Home Banner content -->
+        <section id="banner-section" class="my-5">
+            <div
+                class="bg-[url(./assets/slide01.jpg)] overflow-hidden h-[75vh] bg-center bg-no-repeat bg-cover rounded-lg relative">
+                <div class="absolute top-0 left-0 w-full h-full bg-black/45"></div>
+                <!-- slider content -->
+                <div class="w-full h-full flex flex-col justify-center items-center">
+                    <div class="absolute z-30 text-white text-center">
+                        <h2 class="text-6xl font-extrabold flex flex-col">
+                            <span class="">End-to-End Travel with</span>
+                            <span class="text-primary">Dublin bus</span>
+                        </h2>
+                        <p class="my-5 w-4/6 mx-auto font-Inter text-lg font-normal">
+                            Yes, you can run unit tests and view the results directly within
+                            the app. The integrated testing features allow for a streamlined
+                            .
+                        </p>
+                        <button
+                            class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary font-extrabold uppercase text-secondary hover:bg-transparent">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+                <!-- slider navigation -->
+                <div class="absolute top-0 left-0 h-full flex items-center  justify-between w-full px-10 ">
+                    <button
+                        class="btn rounded-full bg-primary border-primary hover:bg-transparent transition-colors duration-200 ease-in-out hover:text-primary hover:border-primary">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+                    <button
+                        class="btn rounded-full bg-primary border-primary hover:bg-transparent transition-colors duration-200 ease-in-out hover:text-primary hover:border-primary">
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
         <!-- Script JS file link -->
         <script src="./JS/app.js"></script>
     </header>
