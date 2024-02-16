@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <title>Dublin Bus - Online Bus Ticket Booking With DOM Manipulation</title>
+    <!-- Link: Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Link: Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
+
+    <!-- Link: TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1dd100',
+                        secondary: '#030712',
+                        couponOne: '#ffbf0f',
+                        couponTwo: '#f78c9c',
+                        mobileMenu: '#f7f8f8',
+                    },
+                    fontFamily: {
+                        RaleWay: 'Raleway',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Link: Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body class="font-RaleWay">
+    <!-- Header Section content -->
+    <header class="w-11/12 mx-auto mb-10">
+        <nav class="flex justify-between items-center py-2 relative">
+            <div>
+                <img width="150" src="./assets/logo.jpg" alt="" />
+            </div>
+            <ul class="sm:flex hidden gap-5">
+                <li>
+                    <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Home</a>
+                </li>
+                <li>
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">About Us</a>
+                </li>
+                <li>
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Destination</a>
+                </li>
+                <li>
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Search</a>
+                </li>
+                <li class="md:hidden lg:block">
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="flex items-center gap-5">
+                <button
+                    class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary hover:bg-transparent">
+                    <span>Bus</span>
+                    <i class="fa-solid fa-van-shuttle"></i>
+                </button>
+                <button id="menu-btn" class="sm:hidden block">
+                    <i class="fa-solid fa-bars sm:hidden block text-2xl bg-primary px-3 py-2 rounded"></i>
+                    <i id="close-icon"
+                        class="fa-solid fa-xmark sm:block hidden text-2xl bg-primary px-3 py-2 rounded"></i>
+                </button>
+            </div>
+            <ul id="mobileMenu"
+                class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-md bg-slate-200 text-center w-full mx-auto">
+                <li class="hover:bg-primary py-2 rounded text-primary hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Home</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">About Us</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Destination</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Search</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="banner-section"></section>
+        <!-- Script JS file link -->
+        <script src="./JS/app.js"></script>
+    </header>
+</body>
+
+</html>
