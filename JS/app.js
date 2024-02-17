@@ -4,6 +4,8 @@ const mobileMenuEl = document.getElementById("mobileMenu");
 const seatSelectedEl = document.getElementById("selected-seat")
 const totalPriceEl = document.getElementById("total-price")
 const availableSeatEl = document.getElementById("available-seat")
+const couponInputField = document.getElementById("coupon-filed")
+const couponBtnEl = document.getElementById("coupon-btn")
 
 // Menu icons
 menuBtn.addEventListener('click', function () {
@@ -43,6 +45,13 @@ function handleSelectSeat(event) {
             <span>550</span>
         </li>
         `
+            // active coupon button if 4 seat is booked
+            if (selectedSeat.length > 3) {
+                couponInputField.removeAttribute("disabled")
+                couponBtnEl.removeAttribute('disabled')
+            }
+
+
         } else {
             return alert("Maximum seat added")
         }
