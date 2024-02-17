@@ -33,6 +33,10 @@ function handleSelectSeat(event) {
 
             totalPriceEl.innerText = totalPrice.toFixed(2);
 
+            // count seat
+            const totalBookedEl = document.getElementById("total-booked")
+            totalBookedEl.innerText = selectedSeat.length
+
             // decrease available seat
             const availableSeatValue = parseFloat(availableSeatEl.innerText);
             const newAvailableSeatValue = availableSeatValue - 1;
@@ -45,6 +49,7 @@ function handleSelectSeat(event) {
             <span>550</span>
         </li>
         `
+
             // active coupon button if 4 seat is booked
             if (selectedSeat.length > 3) {
                 couponInputField.removeAttribute("disabled")
@@ -60,7 +65,7 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     const couponInputValue = couponInputField.value;
     let couponSave = 0;
 
-    if (couponInputValue !== "NEW50" && couponInputValue !== "Couple20") {
+    if (couponInputValue !== "NEW50" && couponInputValue !== "Couple 20") {
         alert("Your Provided Coupon Code Is Not Valid 😕")
         return couponInputField.value = ""
 
@@ -69,7 +74,7 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     if (couponInputValue === "NEW50") {
         couponSave = totalPrice * 0.15;
 
-    } else if (couponInputValue === "Couple20") {
+    } else if (couponInputValue === "Couple 20") {
         couponSave = totalPrice * 0.20;
 
     }
@@ -82,6 +87,7 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     <p>Discount</p>
     <p><span>- BDT: </span> <span id="total-price">${ couponSave.toFixed(2) }</span></p>
     `
+
 
     const grandTotalValue = totalPrice - couponSave;
     grandTotalEl.innerText = grandTotalValue.toFixed(2);
@@ -100,3 +106,5 @@ phoneNumberEl.addEventListener('input', function (e) {
         nextButton.setAttribute("disabled", true);
     }
 });
+
+// show modal on clicking the next button

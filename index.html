@@ -45,7 +45,6 @@
             },
         }
     </script>
-
 </head>
 
 <body class="font-RaleWay">
@@ -233,7 +232,7 @@
                         <span class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-5"></span>
                     </div>
                     <div class="text-center">
-                        <h3 class="text-4xl font-extrabold text-secondary">Couple20</h3>
+                        <h3 class="text-4xl font-extrabold text-secondary">Couple 20</h3>
                         <p class="text-lg text-body">Coupon Code</p>
                     </div>
                 </div>
@@ -570,7 +569,11 @@
                     <section class="font-Inter">
                         <div class="bg-[#f7f8f8] p-8 rounded-xl">
                             <h3 class="text-lg font-semibold flex justify-between">
-                                <span>Seat</span>
+                                <p class="flex">
+                                    <span>Seat</span>
+                                    <span id="total-booked"
+                                        class="bg-primary w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm">0</span>
+                                </p>
                                 <span>Class</span>
                                 <span>Price</span>
                             </h3>
@@ -588,7 +591,9 @@
                                 class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
                                 <input type="text" class="input my-5 input-primary border-primary" name=""
                                     id="coupon-field" disabled placeholder="have any coupon?" />
-                                <button id="coupon-btn" disabled class="btn bg-primary">Apply</button>
+                                <button id="coupon-btn" disabled class="btn bg-primary">
+                                    Apply
+                                </button>
                             </div>
                             <!-- Grand total -->
                             <div class="text-lg font-semibold flex justify-between">
@@ -599,7 +604,7 @@
                         <!-- form section -->
                         <div class="my-5">
                             <label class="form-control w-full my-3">
-                                <span class="label-text font-bold text-base  mb-3">Passenger Name*</span>
+                                <span class="label-text font-bold text-base mb-3">Passenger Name*</span>
                                 <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
                             </label>
                             <label class="form-control w-full my-3">
@@ -629,7 +634,7 @@
         </section>
     </main>
 
-    <footer class="bg-secondary text-white ">
+    <footer class="bg-secondary text-white">
         <div class="w-11/12 mx-auto py-20">
             <div class="flex justify-between">
                 <div>
@@ -637,14 +642,14 @@
                         <img width="50" src="./assets/favicon.png" alt="" />
                         <span>Dublin Bus</span>
                     </div>
-                    <p class=" font-Inter text-white/80 text-sm">Dublin Bus is a digital platform to make your <br>
-                        daily
-                        commuting
-                        better.</p>
+                    <p class="font-Inter text-white/80 text-sm">
+                        Dublin Bus is a digital platform to make your <br />
+                        daily commuting better.
+                    </p>
                 </div>
                 <div class="text-center">
                     <h3 class="mb-2">Download our app</h3>
-                    <img src="./assets/google.png" alt="">
+                    <img src="./assets/google.png" alt="" />
                 </div>
             </div>
             <div class="border-b-[1px] mt-10 border-dashed border-white/50"></div>
