@@ -47,7 +47,7 @@
     </script>
 </head>
 
-<body class="font-RaleWay">
+<body class="font-RaleWay scroll-smooth">
     <!-- Header Section content -->
     <header class="w-11/12 mx-auto">
         <!-- Navigation Menu Content -->
@@ -90,7 +90,7 @@
                 </button>
             </div>
             <ul id="mobileMenu"
-                class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-2xl bg-slate-200 text-center w-full mx-auto">
+                class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-2xl bg-slate-200 text-center w-full mx-auto z-50">
                 <li class="hover:bg-primary py-2 rounded text-primary hover:text-secondary w-full">
                     <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Home</a>
                 </li>
@@ -118,11 +118,11 @@
                 <div class="w-full h-full flex flex-col justify-center items-center absolute top-0 left-0 z-20">
                     <!-- slider content -->
                     <div class="absolute text-white text-center">
-                        <h2 class="text-6xl font-extrabold flex flex-col">
+                        <h2 class="lg:text-6xl md:text-5xl text-3xl font-extrabold flex flex-col">
                             <span class="">End-to-End Travel with</span>
                             <span class="text-primary">Dublin bus</span>
                         </h2>
-                        <p class="my-5 w-4/6 mx-auto font-Inter text-lg font-normal">
+                        <p class="my-5 sm:w-4/6 w-11/12 mx-auto font-Inter sm:text-lg text-base font-normal">
                             Yes, you can run unit tests and view the results directly within
                             the app. The integrated testing features allow for a streamlined
                             .
@@ -134,7 +134,7 @@
                     </div>
 
                     <!-- slider navigation -->
-                    <div class="flex items-center justify-between w-full px-10">
+                    <div class="sm:flex items-center justify-between w-full lg:px-10 md:px-5 hidden">
                         <button
                             class="btn rounded-full bg-primary border-primary hover:bg-transparent transition-colors duration-200 ease-in-out hover:text-primary hover:border-primary">
                             <i class="fa-solid fa-backward"></i>
@@ -151,7 +151,8 @@
 
     <main class="mt-10">
         <!-- statistics section start -->
-        <section id="statistics" class="grid grid-cols-3 gap-5 w-9/12 mx-auto -mt-20">
+        <section id="statistics"
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-9/12 w-11/12 mx-auto sm:-mt-20">
             <!-- Card One -->
             <div
                 class="flex items-center gap-6 border-b-2 border-primary px-10 py-8 rounded-3xl shadow-lg bg-white z-[1]">
@@ -192,16 +193,17 @@
         <section id="coupon-section" class="my-20 w-11/12 mx-auto">
             <!-- section heading -->
             <div id="section-heading" class="text-center">
-                <h3 class="text-5xl font-bold text-secondary capitalize">
+                <h3 class="sm:text-5xl text-4xl font-bold text-secondary capitalize">
                     Best Offers for you
                 </h3>
             </div>
             <!-- coupon cards -->
-            <div class="grid grid-cols-2 gap-10 my-10">
+            <div class="grid lg:grid-cols-2 gap-10 my-10">
                 <div
-                    class="bg-couponOne px-14 py-10 rounded-2xl shadow-xl flex justify-between items-center font-Inter relative overflow-hidden">
-                    <div>
-                        <h3 class="text-6xl font-extrabold text-secondary">15% OFF</h3>
+                    class="bg-couponOne px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
+                    <div class="z-10">
+                        <h3 class="sm:text-6xl text-4xl sm:text-left text-center font-extrabold text-secondary">15% OFF
+                        </h3>
                         <h4 class="text-2xl font-semibold py-1">on your next purchase</h4>
                         <p class="text-xl tracking-widest text-body">
                             use by February 2024
@@ -212,15 +214,16 @@
                         <span class="bg-white inline-block w-1 h-full rounded-full absolute top-0"></span>
                         <span class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-5"></span>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center z-10">
                         <h3 class="text-4xl font-extrabold text-secondary">NEW50</h3>
                         <p class="text-lg text-body">Coupon Code</p>
                     </div>
                 </div>
                 <div
-                    class="bg-couponTwo px-14 py-10 rounded-2xl shadow-xl flex justify-between items-center font-Inter relative overflow-hidden">
+                    class="bg-couponTwo px-14 py-10 rounded-2xl shadow-xl flex sm:flex-row flex-col justify-between items-center font-Inter relative overflow-hidden">
                     <div>
-                        <h3 class="text-6xl font-extrabold text-secondary">20% OFF</h3>
+                        <h3 class="sm:text-6xl text-4xl sm:text-left text-center font-extrabold text-secondary">20% OFF
+                        </h3>
                         <h4 class="text-2xl font-semibold py-1">on your next purchase</h4>
                         <p class="text-xl tracking-widest text-body">
                             use by February 2024
@@ -231,7 +234,7 @@
                         <span class="bg-white inline-block w-1 h-full rounded-full absolute top-0"></span>
                         <span class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-5"></span>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center z-10">
                         <h3 class="text-4xl font-extrabold text-secondary">Couple 20</h3>
                         <p class="text-lg text-body">Coupon Code</p>
                     </div>
@@ -249,10 +252,10 @@
         <section class="bg-mobileMenu py-20 rounded-t-3xl border-t-2 border-primary">
             <!-- section heading -->
             <div id="section-heading" class="text-center">
-                <h3 class="text-5xl font-bold text-secondary capitalize">
+                <h3 class="lg:text-5xl md:text-4xl text-3xl font-bold text-secondary capitalize">
                     Dublin Ticket Counter
                 </h3>
-                <p class="text-body font-Inter w-2/5 mx-auto py-2">
+                <p class="text-body font-Inter lg:w-2/5 md:w-4/5 w-11/12 mx-auto py-2">
                     Yes, you can run unit tests and view the results directly within the
                     app. The integrated testing features allow for a streamlined .
                 </p>
@@ -320,8 +323,9 @@
             </section>
 
             <!-- seat booking section -->
-            <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5">
-                <div class="col-span-2 border-r-2 border-dashed border-[#0307124d]">
+            <section
+                class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+                <div class="sm:col-span-2 lg:border-r-2 md:border-r-2 border-none  lg:border-dashed border-[#0307124d]">
                     <div class="mr-5">
                         <h2 class="text-secondary font-semibold text-2xl">
                             Select Your Seat
@@ -343,226 +347,227 @@
                     <section class="grid grid-cols-12 items-center gap-y-5 mr-20 font-Inter">
                         <!-- Front Seat -->
                         <p class="col-span-1"></p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <p class="col-span-8"></p>
                             <p class="col-span-2 btn">
                                 <img class="select-none" src="./assets/wheel.png" alt="" />
                             </p>
                         </div>
                         <!-- ROW 01 -->
-                        <p class="col-span-1">A</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <p class="sm:col-span-1">A</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A4
                             </button>
                         </div>
-                        <!-- ROW 02 -->
-                        <p class="col-span-1">B</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">B</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B4
                             </button>
                         </div>
-                        <!-- ROW 03 -->
-                        <p class="col-span-1">C</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">C</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C4
                             </button>
                         </div>
-                        <!-- ROW 04 -->
-                        <p class="col-span-1">D</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">D</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D4
                             </button>
                         </div>
-                        <!-- ROW 05 -->
-                        <p class="col-span-1">E</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">E</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E4
                             </button>
                         </div>
-                        <!-- ROW 06 -->
-                        <p class="col-span-1">F</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">F</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F4
                             </button>
                         </div>
-                        <!-- ROW 07 -->
-                        <p class="col-span-1">G</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">G</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G4
                             </button>
                         </div>
-                        <!-- ROW 08 -->
-                        <p class="col-span-1">H</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">H</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H4
                             </button>
                         </div>
-                        <!-- ROW 09 -->
-                        <p class="col-span-1">I</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">I</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I4
                             </button>
                         </div>
-                        <!-- ROW 10 -->
-                        <p class="col-span-1">J</p>
-                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+
+                        <p class="sm:col-span-1">J</p>
+                        <div class="col-span-11 grid sm:grid-cols-10 grid-cols-5 gap-16 items-center text-center">
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J1
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J2
                             </button>
-                            <p class="col-span-2"></p>
+                            <p class="sm:col-span-2"></p>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J3
                             </button>
                             <button onclick="handleSelectSeat(this)"
-                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
+                                class="sm:col-span-2 btn sm:btn-md btn-lg hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J4
                             </button>
                         </div>
+
                     </section>
                 </div>
-                <div>
-                    <h2 class="text-secondary font-semibold text-2xl">
+                <div class="lg:col-span-1 col-span-12">
+                    <h2 class="text-secondary font-semibold text-2xl sm:text-left text-center sm:mt-0 mt-5">
                         Select Your Seat
                     </h2>
                     <div class="border-b-2 my-4 border-dashed"></div>
@@ -591,7 +596,7 @@
                             <!-- coupon field -->
                             <div id="show-coupon-price"
                                 class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-                                <input type="text" class="input my-5 input-primary border-primary" name=""
+                                <input type="text" class="input my-5 w-full input-primary border-primary" name=""
                                     id="coupon-field" disabled placeholder="have any coupon?" />
                                 <button id="coupon-btn" disabled class="btn bg-primary">
                                     Apply
@@ -662,9 +667,9 @@
 
     <footer class="bg-secondary text-white">
         <div class="w-11/12 mx-auto py-20">
-            <div class="flex justify-between">
-                <div>
-                    <div class="flex items-center text-3xl font-semibold capitalize">
+            <div class="flex sm:flex-row flex-col sm:gap-0 gap-5 justify-between items-center">
+                <div class="text-center sm:text-left">
+                    <div class="flex sm:justify-start justify-center items-center text-3xl font-semibold capitalize">
                         <img width="50" src="./assets/favicon.png" alt="" />
                         <span>Dublin Bus</span>
                     </div>
@@ -679,9 +684,11 @@
                 </div>
             </div>
             <div class="border-b-[1px] mt-10 border-dashed border-white/50"></div>
-            <div class="mt-10 font-Inter flex justify-between text-white/80">
-                <p>@All Rights Reserved. Dublin Bus Services Limited 1912 - 2024</p>
-                <ul class="flex items-center gap-5">
+            <div class="mt-10 font-Inter flex sm:flex-row flex-col-reverse justify-between text-white/80">
+                <p class="text-center sm:text-left sm:mt-0 mt-10">@All Rights Reserved. Dublin Bus Services Limited 1912
+                    - 2024
+                </p>
+                <ul class="flex sm:flex-row flex-col items-center gap-5">
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Return & Refund Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
