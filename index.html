@@ -46,8 +46,6 @@
         }
     </script>
 
-    <!-- Link: Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 
 <body class="font-RaleWay">
@@ -279,7 +277,7 @@
                             <!-- available seat section -->
                             <div class="bg-buttonColor text-primary p-5 rounded-xl text-lg font-medium font-Inter">
                                 <i class="fa-solid fa-couch"></i>
-                                <span>40</span>
+                                <span id="available-seat">40</span>
                                 <span>Seats</span>
                             </div>
                         </div>
@@ -348,177 +346,218 @@
                         <p class="col-span-1"></p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
                             <p class="col-span-8"></p>
-                            <p class="col-span-2 btn select-none">
+                            <p
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out select-none">
                                 <img class="select-none" src="./assets/wheel.png" alt="" />
                             </p>
                         </div>
                         <!-- ROW 01 -->
                         <p class="col-span-1">A</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 A4
                             </button>
                         </div>
                         <!-- ROW 02 -->
                         <p class="col-span-1">B</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 B4
                             </button>
                         </div>
                         <!-- ROW 03 -->
                         <p class="col-span-1">C</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 C4
                             </button>
                         </div>
                         <!-- ROW 04 -->
                         <p class="col-span-1">D</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 D4
                             </button>
                         </div>
                         <!-- ROW 05 -->
                         <p class="col-span-1">E</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 E4
                             </button>
                         </div>
                         <!-- ROW 06 -->
                         <p class="col-span-1">F</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 F4
                             </button>
                         </div>
                         <!-- ROW 07 -->
                         <p class="col-span-1">G</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 G4
                             </button>
                         </div>
                         <!-- ROW 08 -->
                         <p class="col-span-1">H</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 H4
                             </button>
                         </div>
                         <!-- ROW 09 -->
                         <p class="col-span-1">I</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 I4
                             </button>
                         </div>
                         <!-- ROW 10 -->
                         <p class="col-span-1">J</p>
                         <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J1
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J2
                             </button>
                             <p class="col-span-2"></p>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J3
                             </button>
-                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">
+                            <button onclick="handleSelectSeat(this)"
+                                class="col-span-2 btn hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out">
                                 J4
                             </button>
                         </div>
@@ -538,26 +577,12 @@
                             </h3>
                             <div class="border-b-2 my-4 border-dashed"></div>
                             <ul id="selected-seat" class="space-y-5">
-                                <li class="text-base font-normal flex justify-between">
-                                    <span>A2</span>
-                                    <span>Economy</span>
-                                    <span>500</span>
-                                </li>
-                                <li class="text-base font-normal flex justify-between">
-                                    <span>A2</span>
-                                    <span>Economy</span>
-                                    <span>500</span>
-                                </li>
-                                <li class="text-base font-normal flex justify-between">
-                                    <span>A2</span>
-                                    <span>Economy</span>
-                                    <span>500</span>
-                                </li>
+                                <!-- All selected Seat goes here -->
                             </ul>
                             <div class="border-b-2 my-4"></div>
                             <div class="text-lg font-semibold flex justify-between">
                                 <p>Total Price</p>
-                                <p><span>BDT</span> <span>1100</span></p>
+                                <p><span>BDT</span> <span id="total-price">****</span></p>
                             </div>
                             <!-- coupon field -->
                             <div class="flex items-center gap-2">
@@ -587,7 +612,7 @@
                                 <input type="email" placeholder="Enter Your Email ID"
                                     class="input input-bordered w-full" />
                             </label>
-                            <button class="w-full btn bg-primary mt-5 text-lg text-white uppercase">
+                            <button disabled class="w-full btn bg-primary mt-5 text-lg text-white uppercase">
                                 Next
                             </button>
                         </div>
@@ -602,6 +627,7 @@
             </section>
         </section>
     </main>
+
     <footer class="bg-secondary text-white ">
         <div class="w-11/12 mx-auto py-20">
             <div class="flex justify-between">
