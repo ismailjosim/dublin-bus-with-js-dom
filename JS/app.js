@@ -87,3 +87,16 @@ document.getElementById("coupon-btn").addEventListener('click', function () {
     grandTotalEl.innerText = grandTotalValue.toFixed(2);
 
 })
+
+// active next but by adding phone number
+const phoneNumberEl = document.getElementById("phone-number")
+const nextButton = document.getElementById("nextButton")
+
+phoneNumberEl.addEventListener('input', function (e) {
+    const inputValue = e.target.value;
+    if (inputValue.length >= 11) {
+        nextButton.removeAttribute("disabled")
+    } else {
+        nextButton.setAttribute("disabled", true);
+    }
+});
