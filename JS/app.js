@@ -10,3 +10,7 @@ menuBtn.addEventListener('click', handleToggleMenu = () => {
     mobileMenuEl.classList.toggle("flex")
 })
 
+function handleSelectSeat(event) {
+    const selectedSeat = event.innerText
+    console.log(selectedSeat)
+}

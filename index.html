@@ -259,7 +259,7 @@
             <!-- Current available Bus Services -->
             <section class="w-11/12 mx-auto my-10">
                 <div
-                    class="bg-white px-14 py-10 rounded-2xl shadow-sm font-Inter relative overflow-hidden grid grid-cols-3">
+                    class="bg-white px-8 py-10 rounded-2xl shadow-sm font-Inter relative overflow-hidden grid grid-cols-3 gap-20">
                     <div class="col-span-2">
                         <div class="flex justify-between items-center">
                             <div class="flex items-center gap-5">
@@ -296,10 +296,12 @@
                             </li>
                         </div>
                     </div>
-                    <div class="flex justify-end items-center gap-10">
+                    <div class="flex justify-evenly items-center col-span-1">
                         <div class="flex flex-col items-center justify-between h-full overflow-hidden">
                             <span class="bg-mobileMenu inline-block w-10 h-10 rounded-full absolute -top-5 z-20"></span>
-                            <span class="bg-primary inline-block w-1 h-full rounded-full absolute top-0"></span>
+
+                            <span
+                                class="border-primary border-dashed inline-block border-r-2 h-full absolute top-0"></span>
                             <span
                                 class="bg-mobileMenu inline-block w-10 h-10 rounded-full absolute -bottom-5 z-10"></span>
                         </div>
@@ -314,7 +316,131 @@
 
             </section>
 
+            <!-- seat booking section -->
+            <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5">
+                <div class="col-span-2 border-r-2 border-dashed border-[#0307124d]">
+                    <div class="mr-5 ">
+                        <h2 class="text-secondary font-semibold text-2xl">Select Your Seat</h2>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+                        <div class="flex justify-between">
+                            <p>
+                                <i class="fa-solid fa-couch"></i>
+                                <span>Available</span>
+                            </p>
+                            <p class="text-primary font-semibold">
+                                <i class="fa-solid fa-couch"></i>
+                                <span>Selected</span>
+                            </p>
+                        </div>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+                    </div>
+                    <!-- seat section -->
+                    <section class="grid grid-cols-12 items-center gap-y-5 mr-20 font-Inter w-3/4 mx-auto">
+                        <!-- Front Seat -->
+                        <p class="col-span-1"></p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <p class="col-span-8"></p>
+                            <p class="col-span-2 btn select-none"><img class="select-none" src="./assets/wheel.png"
+                                    alt=""></p>
+                        </div>
+                        <!-- ROW 01 -->
+                        <p class="col-span-1">A</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">A1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">A2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">A3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">A4</button>
+                        </div>
+                        <!-- ROW 02 -->
+                        <p class="col-span-1">B</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">B1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">B2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">B3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">B4</button>
+                        </div>
+                        <!-- ROW 03 -->
+                        <p class="col-span-1">C</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">C1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">C2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">C3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">C4</button>
+                        </div>
+                        <!-- ROW 04 -->
+                        <p class="col-span-1">D</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">D1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">D2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">D3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">D4</button>
+                        </div>
+                        <!-- ROW 05 -->
+                        <p class="col-span-1">E</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">E1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">E2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">E3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">E4</button>
+                        </div>
+                        <!-- ROW 06 -->
+                        <p class="col-span-1">F</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">F1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">F2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">F3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">F4</button>
+                        </div>
+                        <!-- ROW 07 -->
+                        <p class="col-span-1">G</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">G1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">G2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">G3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">G4</button>
+                        </div>
+                        <!-- ROW 08 -->
+                        <p class="col-span-1">H</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">H1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">H2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">H3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">H4</button>
+                        </div>
+                        <!-- ROW 09 -->
+                        <p class="col-span-1">I</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">I1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">I2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">I3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">I4</button>
+                        </div>
+                        <!-- ROW 10 -->
+                        <p class="col-span-1">J</p>
+                        <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn">J1</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">J2</button>
+                            <p class="col-span-2"></p>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">J3</button>
+                            <button onclick="handleSelectSeat(this)" class="col-span-2 btn ">J4</button>
+                        </div>
 
+                    </section>
+                </div>
+                <div>
+                    <h2 class="text-secondary font-semibold text-2xl">Select Your Seat</h2>
+                    <div class="border-b-2 my-4 border-dashed"></div>
+                </div>
+            </section>
         </section>
 
     </main>
