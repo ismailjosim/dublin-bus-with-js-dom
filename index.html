@@ -580,6 +580,8 @@
                             <div class="border-b-2 my-4 border-dashed"></div>
                             <ul id="selected-seat" class="space-y-5">
                                 <!-- All selected Seat goes here -->
+                                <h3 id="default-text" class="text-3xl font-semibold text-error capitalize text-center">
+                                    No seat Booked</h3>
                             </ul>
                             <div class="border-b-2 my-4"></div>
                             <div class="text-lg font-semibold flex justify-between">
@@ -617,10 +619,34 @@
                                 <input type="email" placeholder="Enter Your Email ID"
                                     class="input input-bordered w-full" />
                             </label>
-                            <button disabled id="nextButton"
+                            <button disabled onclick="my_modal_1.showModal()" id="nextButton"
                                 class="w-full btn bg-primary mt-5 text-lg text-white uppercase">
                                 Next
                             </button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog"
+                                    class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                    <i class="fa-regular fa-circle-check text-6xl text-primary"></i>
+                                    <h3 class="font-bold text-2xl text-primary my-5">
+                                        Congratulations
+                                    </h3>
+                                    <div class="text-center">
+                                        <p class="font-bold">
+                                            Thank you for booking our bus seats. We are working hard
+                                            to find the best Service and deals for you.
+                                        </p>
+
+
+                                    </div>
+                                    <p class="my-2">
+                                        Shortly you will find a confirmation in your email
+                                    </p>
+                                    <button id="btn-continue"
+                                        class="btn bg-primary px-16 btn-md hover:bg-black transition-colors ease-in duration-300 text-white">
+                                        Continue
+                                    </button>
+                                </form>
+                            </dialog>
                         </div>
                         <div class="flex justify-between">
                             <a class="underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out"

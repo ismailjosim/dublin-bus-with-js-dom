@@ -1,4 +1,3 @@
-
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenuEl = document.getElementById("mobileMenu");
 const seatSelectedEl = document.getElementById("selected-seat")
@@ -7,6 +6,10 @@ const availableSeatEl = document.getElementById("available-seat")
 const couponInputField = document.getElementById("coupon-field")
 const couponBtnEl = document.getElementById("coupon-btn")
 const grandTotalEl = document.getElementById("grand-total")
+const btnContinue = document.getElementById('btn-continue');
+const totalBookedEl = document.getElementById("total-booked")
+const bookedSectionDefaultEl = document.getElementById("default-text")
+
 // Menu icons
 menuBtn.addEventListener('click', function () {
     menuBtn.children[0].classList.toggle("hidden")
@@ -34,13 +37,14 @@ function handleSelectSeat(event) {
             totalPriceEl.innerText = totalPrice.toFixed(2);
 
             // count seat
-            const totalBookedEl = document.getElementById("total-booked")
             totalBookedEl.innerText = selectedSeat.length
 
             // decrease available seat
             const availableSeatValue = parseFloat(availableSeatEl.innerText);
             const newAvailableSeatValue = availableSeatValue - 1;
             availableSeatEl.innerText = newAvailableSeatValue
+
+            bookedSectionDefaultEl.classList.add("hidden")
 
             seatSelectedEl.innerHTML += `
          <li class="text-base font-normal flex justify-between">
@@ -107,4 +111,7 @@ phoneNumberEl.addEventListener('input', function (e) {
     }
 });
 
-// show modal on clicking the next button
+// Reload the window
+btnContinue.addEventListener('click', function () {
+    window.location.reload();
+});
