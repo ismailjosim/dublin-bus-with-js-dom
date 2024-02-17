@@ -4,9 +4,9 @@ const mobileMenuEl = document.getElementById("mobileMenu");
 const seatSelectedEl = document.getElementById("selected-seat")
 const totalPriceEl = document.getElementById("total-price")
 const availableSeatEl = document.getElementById("available-seat")
-const couponInputField = document.getElementById("coupon-filed")
+const couponInputField = document.getElementById("coupon-field")
 const couponBtnEl = document.getElementById("coupon-btn")
-
+const grandTotalEl = document.getElementById("grand-total")
 // Menu icons
 menuBtn.addEventListener('click', function () {
     menuBtn.children[0].classList.toggle("hidden")
@@ -31,7 +31,7 @@ function handleSelectSeat(event) {
             selectedSeat.push(value);
             totalPrice += 550;
 
-            totalPriceEl.innerText = totalPrice;
+            totalPriceEl.innerText = totalPrice.toFixed(2);
 
             // decrease available seat
             const availableSeatValue = parseFloat(availableSeatEl.innerText);
@@ -50,13 +50,40 @@ function handleSelectSeat(event) {
                 couponInputField.removeAttribute("disabled")
                 couponBtnEl.removeAttribute('disabled')
             }
-
-
         } else {
             return alert("Maximum seat added")
         }
-
-
     }
 }
 
+document.getElementById("coupon-btn").addEventListener('click', function () {
+    const couponInputValue = couponInputField.value;
+    let couponSave = 0;
+
+    if (couponInputValue !== "NEW50" && couponInputValue !== "Couple20") {
+        alert("Your Provided Coupon Code Is Not Valid 😕")
+        return couponInputField.value = ""
+
+    }
+
+    if (couponInputValue === "NEW50") {
+        couponSave = totalPrice * 0.15;
+
+    } else if (couponInputValue === "Couple20") {
+        couponSave = totalPrice * 0.20;
+
+    }
+    // hide coupon input field and apply button
+    couponInputField.classList.add("hidden")
+    couponBtnEl.classList.add("hidden")
+
+    const showCouponPriceEl = document.getElementById("show-coupon-price");
+    showCouponPriceEl.innerHTML = `
+    <p>Discount</p>
+    <p><span>- BDT: </span> <span id="total-price">${ couponSave.toFixed(2) }</span></p>
+    `
+
+    const grandTotalValue = totalPrice - couponSave;
+    grandTotalEl.innerText = grandTotalValue.toFixed(2);
+
+})

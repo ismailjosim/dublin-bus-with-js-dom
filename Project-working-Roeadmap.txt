@@ -38,7 +38,7 @@ challenge part:
     👉 coupon will active when a person select 4 ticket.
     👉 one ticket will be purchase one time ✅
     👉 User can't purchase more then 4 tickets ✅
-    👉 coupon will be apply based on name: NEW15/ Couple 20
+    👉 coupon will be apply based on name: NEW50/ Couple 20
     👉 have to show discount price below the total price. by default it won't show. click the apply button
     👉 grand total will also be updated.
     👉 after apply coupon the input and button will be hidden.

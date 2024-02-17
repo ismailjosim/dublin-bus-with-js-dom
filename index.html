@@ -581,18 +581,19 @@
                             <div class="border-b-2 my-4"></div>
                             <div class="text-lg font-semibold flex justify-between">
                                 <p>Total Price</p>
-                                <p><span>BDT</span> <span id="total-price">****</span></p>
+                                <p><span>BDT: </span> <span id="total-price">****</span></p>
                             </div>
                             <!-- coupon field -->
-                            <div class="flex items-center gap-2">
+                            <div id="show-coupon-price"
+                                class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
                                 <input type="text" class="input my-5 input-primary border-primary" name=""
-                                    id="coupon-filed" disabled placeholder="have any coupon?" />
-                                <button id="coupon-btn" class="btn bg-primary" disabled>Apply</button>
+                                    id="coupon-field" disabled placeholder="have any coupon?" />
+                                <button id="coupon-btn" disabled class="btn bg-primary">Apply</button>
                             </div>
                             <!-- Grand total -->
                             <div class="text-lg font-semibold flex justify-between">
                                 <p>Grand Price</p>
-                                <p><span>BDT</span> <span>1100</span></p>
+                                <p><span>BDT: </span> <span id="grand-total">****</span></p>
                             </div>
                         </div>
                         <!-- form section -->
