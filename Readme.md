@@ -4,7 +4,7 @@
 
   <h4><b>Dublin Bus</b> Online Bus seat booking Website with JS</h4>
 
-👉 Live Demo: <a target='_blank' href='https://dublinbusbd.netlify.apps/'>Dublin Bus</a>
+👉 Live Demo: <a target='_blank' href='https://dublinbusbd.netlify.app'>Dublin Bus</a>
 
 <h3>Build with:</h3>
 
